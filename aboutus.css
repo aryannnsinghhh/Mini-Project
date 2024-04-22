@@ -3,49 +3,60 @@
     padding: 0;
     font-style: 'Poppins', sans-serif;
     box-sizing: border-box;
-    background-color: beige;
+    
 }
 html{
     padding: 0px 10px;
+    background-color: black;
 }
 .header{
     font-size: 100px;
     font-weight: bolder;
+    color: #fff;
+    margin: 20px;
 }
 .person{
     margin: 25px;
     padding: 10px 100px;
     display: flex;
-    background-color: #56562a;
+    background-color: #ffd50099;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     border-radius: 20px;
-    gap: 15vw;
+    gap: 12vw;
+}
+.person:hover{
+    background-color: #fff000;
+    transition: background 0.3s;
 }
 
-.circle{
-    background-color: #56562a;
-    display: block;
+.circle{  
+    flex-basis: 30%;
+    text-align: center;
 }
 .details{
-    background-color: #56562a;
-    color: #c8c8c8;
     padding: 10px 50px;
+    flex-basis: 60%;
     justify-content: center;
     text-align: center;
-    display: block;
     justify-items: center;
 }
-.name{
-    background-color: #56562a;
+.name{  
     font-size: 50px;
     font-weight: bold;
     text-align: center;
 }
 .person img{
-    width: 100%;
     height: 40vh;
     border: #fff 10px solid;
     border-radius: 50%;
     box-shadow: 0 5px 10px rgba(255, 242, 0, 0.22);
+}
+.footer{
+    padding: 3%;
+    background-color: #262626;
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
 }
