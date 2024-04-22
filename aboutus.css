@@ -3,6 +3,7 @@
     padding: 0;
     font-style: 'Poppins', sans-serif;
     box-sizing: border-box;
+    font-size: 20px;
     
 }
 html{
@@ -17,7 +18,8 @@ html{
 }
 .person{
     margin: 25px;
-    padding: 10px 100px;
+    padding: 20px 100px;
+    margin: 20px 100px;
     display: flex;
     background-color: #ffd50099;
     justify-content: center;
@@ -34,12 +36,16 @@ html{
     flex-basis: 30%;
     text-align: center;
 }
-.details{
+.person .details{
     padding: 10px 50px;
     flex-basis: 60%;
     justify-content: center;
     text-align: center;
     justify-items: center;
+    transition: transform 0.3s;
+}
+.person:hover .details{
+    transform: scale(1.05);
 }
 .name{  
     font-size: 50px;
@@ -50,7 +56,11 @@ html{
     height: 40vh;
     border: #fff 10px solid;
     border-radius: 50%;
+    transition: transform 0.3s;
     box-shadow: 0 5px 10px rgba(255, 242, 0, 0.22);
+}
+.person:hover img{
+    transform: scale(1.05);
 }
 .footer{
     padding: 3%;
