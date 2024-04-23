@@ -3,16 +3,144 @@
     margin: 0;
     font-style: 'Poppins', sans-serif;
     box-sizing: border-box;
-    font-size: 20px;
+    font-size: 23px;
 }
 html{
-    padding: 0px 10px;
-     background-color: black;
+    background-color: black;
     text-align: center;
 }
 .header{
     font-size: 100px;
     font-weight: bolder;
+    color: #fff500;
+    margin: 10px;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#contact{
+    background-color: #080808;
+    padding: 20px 150px;
+}
+.contact-left{
+    flex-basis: 44%;
+    padding: 50px;
+    padding-bottom: 0;
+    background-color: #ffd500cc; 
+    color: #454545;
+    font-weight: 700;
+    text-align: center;
+    border: 3px solid;
+    border-color: rgb(255, 250, 107);
+    border-radius: 40px;
+    transition: transform 0.2s;
+}
+.contact-right{
+    flex-basis: 54%;
+    padding: 50px;
+    padding-bottom: 0;
+    background-color: #ffd500cc; 
     color: #fff;
+    border: 3px solid;
+    border-color: rgb(255, 250, 107);
+    border-radius: 40px;
+    transition: transform 0.2s;
+}
+.contact-left:hover{
+    background-color: #fff000;
+    color: #000;
+    transition: background 0.3s;
+    box-shadow: 0 8px 16px rgb(255, 249, 135);
+    transform: scale(1.01);
+
+}
+.contact-right:hover{
+    background-color: #fff000;
+    color: #fff;
+    transition: background 0.3s;
+    box-shadow: 0 8px 16px rgb(255, 249, 135);
+    transform: scale(1.01);
+}
+.contact-left p{
+    margin-top: 20px;
+    font-family: 'Quantico', sans-serif;
+    text-align: left;
+}
+.contact-left div{
+    
+    font-size: 23px;
+    text-align: justify;
+}
+.contact-left i{
+    margin-right: 15px;
+    
+}   
+
+.social-icon a{
+    text-decoration: none;
     margin: 20px;
+    margin-bottom: 0;
+    font-size: 20px;    
+    color: #454545;
+    display: inline-block;
+    transition: transform 0.1s;
+}
+
+.social-icon a:hover{
+    transform: translateY(-4px);
+    color: #000;
+}
+
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 95%;
+    border: 0;
+    background: #454545;
+    padding: 15px;
+    margin: 11px 15px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.sameline{
+    display: inline-flex;
+}
+.btn{
+    background-color: #454545;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    align-content: center;
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 2px solid #545454;
+    padding: 10px 40px;
+    font-family: 'Quantico', sans-serif;
+    transition: background 0.3s;
+}
+.btn:hover{
+    background: #000000;
+    transform: translateY(-1px);
+}
+.btn.btn2{
+    margin-top: 10px;
+    font-size: 20px;
+}
+form .btn2{
+    cursor: pointer;
+}
+.footer{
+    padding: 3%;
+    background-color: #262626;
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0   ;
 }
