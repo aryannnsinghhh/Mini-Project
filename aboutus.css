@@ -14,7 +14,7 @@ html{
 .header{
     font-size: 100px;
     font-weight: bolder;
-    color: #d4d4d4;
+    color: #fff500;
     margin: 20px;
 }
 .person{
@@ -22,17 +22,21 @@ html{
     padding: 20px 100px;
     margin: 20px 100px;
     display: flex;
-    background: linear-gradient(rgb(51, 51, 51),#ffd500cc); 
+    background: linear-gradient(rgb(0, 0, 0),#ffd500cc); 
     color: #fff;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     gap: 12vw;
+    border: 3px solid;
+    border-color: rgb(255, 250, 107,0.4);
+    border-radius: 40px;
 }
 .person:hover{
     background: linear-gradient(rgba(0,0,0,0.6),#fff000);
     color: #fff;
     transition: background 0.3s;
+    box-shadow: 0 5px 10px rgb(255, 249, 135);
 }
 
 .circle{  
@@ -47,6 +51,7 @@ html{
     justify-items: center;
     color: #000;
     transition: transform 0.3s;
+    
 }
 .person:hover .details{
     color: #fff;
@@ -62,7 +67,7 @@ html{
     border: #fff 10px solid;
     border-radius: 50%;
     transition: transform 0.3s;
-    box-shadow: 0 5px 10px rgba(255, 242, 0, 0.22);
+    box-shadow: 0 8px 16px rgba(255, 242, 0, 0.22);
 }
 .person:hover img{
     transform: scale(1.05);
