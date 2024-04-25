@@ -1,1 +1,1 @@
-# TechSavvy
+# TechQuad
