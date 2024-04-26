@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Cedarville+Cursive&family=Sedan:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Sedan:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Rajdhani:wght@300;400;500;600;700&family=Sedan:ital@0;1&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
 }
 header {
     position: fixed;
@@ -58,4 +63,28 @@ section:hover{
 }
 section:nth-child(odd) {
     background: #0c0d10;
+}
+#css{
+    font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: italic;
+    font-size: 28px;
+  }
+.JS{
+  font-family: "Balthazar", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+}
+#html{
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+}
+#vs{
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size:28px;
 }
