@@ -15,42 +15,42 @@
 
 .form-box{
     width: 90%;
-    max-width: 450px;
+    max-width: 45vh;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     color: #dbac34;
     background: #232025;
-    padding: 50px 60px 70px;
+    padding: 5vh 6vh 7vh;
     text-align: center;
 }
 
 .form-box h1{
-    font-size: 30px;
-    margin-bottom: 60px;
+    font-size: 6vh;
+    margin-bottom: 6vh;
     position: relative;
 }
 
 .form-box h1::after{
     content: '';
-    width: 30px;
-    height: 4px;
-    border-radius: 3px;
-    background: #232025;
+    width: 3vw;
+    height: 0.4vh;
+    border-radius: 0.3vh;
+    background: #dbac34;
     position: absolute;
-    bottom: -12px;
-    left: 43%;
+    bottom: -1.2vh;
+    left: 42%;
     translate: translateX(-50%);
 }
 
 .input-field{
     background: white;
-    margin: 15px 0;
+    margin: 1.5vh 0;
     border-radius: 3px;
     display: flex;
     align-items: center;
-    max-height: 65px;
+    max-height: 6.5vh;
     transition: max-height 0.5s;
     overflow: hidden;
 }
@@ -60,21 +60,21 @@ input{
     background: transparent;
     border: 0;
     outline: 0;
-    padding: 18px 15px;
+    padding: 1.8vh 1.5vh;
 }
 
 .input-field i{
-    margin-left: 15px;
+    margin-left: 1.5vh;
 }
 
 form p{
     text-align: left;
-    font-size: 13px;
+    font-size: 1.3vh;
 }
 
 form p a{
     text-decoration: none;
-    color: #3c00a0;
+    color: #ffcb47;
 }
 
 .btn-field{
@@ -87,8 +87,8 @@ form p a{
     flex-basis: 48%;
     background: #3c00a0;
     color: #fff;
-    height: 40px;
-    border-radius: 20px;
+    height: 4vh;
+    border-radius: 2vh;
     border: 0;
     outline: 0;
     cursor: pointer;
