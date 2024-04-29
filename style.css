@@ -610,24 +610,24 @@ body {
     #page1 h1 {
         color: rgb(217, 236, 135);
         position: absolute;
-        font-size: 25vw;
+        font-size: 16vw;
         top: 25vh;
-        left:14%;
+        left: 4%;
     }
     
     #page1 span {
         position: absolute;
-        top: 38vh;
-        left: 40vw;
+        top: 40vh;
+        left: 28vw;
         font-size: 5vw;
-        width: 50%;
+        width: 60%;
         line-height: 4.3vw;
     }
     
     #page1 h2 {
         position: absolute;
-        top: 55vh;
-        left: 22vw;
+        top: 52vh;
+        left: 28vw;
         line-height: 6vw;
         width: 70%;
         font-size: 6.3vw;
