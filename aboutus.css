@@ -80,3 +80,45 @@ html{
     font-size: 28px;
     font-weight: 400;
 }
+
+@media (max-width: 768px) {
+    .person {
+        flex-direction: column;
+        align-items: center;
+        gap: 0rem;
+    }
+    
+    .person .details {
+        flex-basis: 100%;
+    }
+    
+    .person img {
+        height: 20vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 60px;
+    }
+    
+    .person {
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .person .details {
+        padding: 5px;
+    }
+    
+    .name {
+        font-size: 30px;
+    }
+    
+    .footer {
+        font-size: 20px;
+        margin: 0;
+        bottom: 0;
+        margin-top: 12px;
+    }
+}
