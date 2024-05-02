@@ -5,12 +5,25 @@
     font-family: 'poppins';
     box-sizing: border-box;
 }
+header{
+    height:10vh;
+    background-color: #dbac34;
+    text-align: center;
+    padding: 3vh;
+}
+
+header a{
+    text-decoration: none;
+    color: #232025;
+    font-size: 4vh;
+    font-weight: bold;
+}
 
 .container{
     width: 100%;
-    height: 100vh;
-    color: #232025;
-    background-color: #dbac34;
+    height: 90vh;
+    background-color: #232025;
+    color: #dbac34;
 }
 
 .form-box{
@@ -20,8 +33,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color: #dbac34;
-    background: #232025;
+    background-color: #dbac34;
+    color: #232025;
     padding: 5vh 6vh 7vh;
     text-align: center;
 }
@@ -74,7 +87,7 @@ form p{
 
 form p a{
     text-decoration: none;
-    color: #ffcb47;
+    color: #3c00a0;
 }
 
 .btn-field{
