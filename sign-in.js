@@ -20,7 +20,7 @@ signupBtn.onclick = function(){
 // Function to handle sign-up
 function signUp() {
     // Get input field values
-    var name = document.querySelector("#namefield input").value;
+    var name = document.querySelector("#namefield inpu t").value;
     var email = document.querySelector("input[type='email']").value;
     var password = document.querySelector("input[type='password']").value;
 
