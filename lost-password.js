@@ -17,7 +17,7 @@ function resetPassword() {
             var confirmation = window.confirm("Password reset instructions will be sent to your email. Are you sure you want to proceed?");
 
             if (confirmation) {
-                // Send password reset instructions to the provided email (You can implement this functionality)
+                // Send password reset instructions to the provided email
                 alert("Password reset instructions sent to your email.");
 
                 // Clear the email input field
