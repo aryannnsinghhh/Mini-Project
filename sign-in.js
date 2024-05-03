@@ -19,13 +19,17 @@ signupBtn.onclick = function(){
 
 // Function to handle sign-up
 function signUp() {
-    // Get input field values
-    var name = document.querySelector("#namefield inpu t").value;
+    var name = document.querySelector("#namefield input").value;
     var email = document.querySelector("input[type='email']").value;
     var password = document.querySelector("input[type='password']").value;
 
-    // Validate input
     if (name && email && password) {
+        // Validate email format (you can use a regex or a library like validator.js)
+        if (!isValidEmail(email)) {
+            alert("Please provide a valid email address.");
+            return;
+        }
+
         // Create user object
         var user = {
             name: name,
@@ -33,8 +37,8 @@ function signUp() {
             password: password
         };
 
-        // Store user data locally
-        localStorage.setItem('user', JSON.stringify(user));
+        // Store user data securely (consider using encryption)
+        storeUser(user);
 
         // Clear input fields
         document.querySelector("#namefield input").value = "";
@@ -51,25 +55,44 @@ function signUp() {
     }
 }
 
-
 // Function to handle sign-in
 function signIn() {
-    // Retrieve user data from local storage
+    var email = document.querySelector("input[type='email']").value;
+    var password = document.querySelector("input[type='password']").value;
+
+    if (email && password) {
+        // Send credentials to the server for authentication
+        authenticateUser(email, password);
+    } else {
+        alert("Please provide both email and password.");
+    }
+}
+
+// Function to store user securely (you can use encryption)
+function storeUser(user) {
+    // Store user data in local storage
+    localStorage.setItem('user', JSON.stringify(user));
+}
+
+// Function to authenticate user on the server (replace with actual backend logic)
+function authenticateUser(email, password) {
+    // Placeholder for backend authentication logic
     var storedUser = JSON.parse(localStorage.getItem('user'));
     if (storedUser) {
-        var emailInput = document.querySelector("input[type='email']").value;
-        var passwordInput = document.querySelector("input[type='password']").value;
-
-        // Check if the input credentials match stored credentials
-        if (emailInput === storedUser.email && passwordInput === storedUser.password) {
-            // Redirect to index page upon successful sign-in
-            window.location.href = "index.html"; // Redirect to index page
+        if (email === storedUser.email && password === storedUser.password) {
+            window.location.href = "index.html"; // Redirect to index page upon successful sign-in
         } else {
             alert("Incorrect email or password.");
         }
     } else {
         alert("No user found. Please sign up first.");
     }
+}
+
+// Function to check if the provided email is valid
+function isValidEmail(email) {
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
 }
 
 // Event listeners for sign-up and sign-in buttons
