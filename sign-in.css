@@ -107,6 +107,7 @@ form p a{
     outline: 0;
     cursor: pointer;
     transition: background 1s;
+    margin-top: 5vh;
 }
 
 .input-group{
