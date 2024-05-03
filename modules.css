@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Cedarville+Cursive&family=Sedan:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Sedan:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Rajdhani:wght@300;400;500;600;700&family=Sedan:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 120px;
+    background: #090a0d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.6s;
+}
+.logo:hover{
+  color: gold;
+}
+nav a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .45s;
+}
+nav a:hover,
+nav a:active {
+    color: gold
+}
+section {
+    min-height: 70vh;
+    display: flex;
+    padding-left: 25px;
+    padding-right: 25px;
+    /* justify-content: center; */
+    /* align-items: center;   */
+    background: #1f242d;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 700;
+    transition: 0.6s;
+}
+section:hover{
+  color: gold;
+}
+section:nth-child(odd) {
+    background: #0c0d10;
+}
+#css{
+    font-family: "Sedan", serif;
+  font-weight: 400;
+  font-style: italic;
+    font-size: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 38px;
+  }
+.JS{
+  font-family: "Balthazar", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  padding-top: 20px;
+  line-height: 38px;
+  
+  /* padding: 20px 50px 20px 20px; */
+}
+#html{
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  padding-left: 20px;
+  line-height: 35px;
+}
+#vs{
+  font-family: "Lugrasimo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size:28px;
+}
+#html ul li{
+  margin-left: 50px;
+}
+#css ul li{
+  margin-left: 50px; 
+}
+#js ul li{
+  margin-left: 50px; 
+}
