@@ -74,9 +74,8 @@ function storeUser(user) {
     localStorage.setItem('user', JSON.stringify(user));
 }
 
-// Function to authenticate user on the server (replace with actual backend logic)
 function authenticateUser(email, password) {
-    // Placeholder for backend authentication logic
+
     var storedUser = JSON.parse(localStorage.getItem('user'));
     if (storedUser) {
         if (email === storedUser.email && password === storedUser.password) {
