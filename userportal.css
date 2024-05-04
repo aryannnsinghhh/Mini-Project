@@ -1,0 +1,102 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  height:10vh;
+  background-color: #dbac34;
+  text-align: center;
+  padding: 3vh;
+}
+
+header a{
+  text-decoration: none;
+  color: #232025;
+  font-size: 4vh;
+  font-weight: bold;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.course {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 30vh;
+  height: auto;
+  min-height: 40vh;
+}
+
+.course img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.course-details {
+  padding: 20px;
+}
+
+.course-details h3 {
+  min-height: 6vh;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.course-details p {
+  margin-bottom: 8px;
+}
+
+.register-btn, .delete-btn {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-btn:hover, .delete-btn:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+.para, .para1 {
+  color: #0056b3;
+}
