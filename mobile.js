@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     
     const createCourseCard = (course) => {
-      const { id, title, description, instructor, duration, price, imageUrl } = course;
+      const { id, title, description, price, imageUrl } = course;
   
       const courseCard = document.createElement('div');
       courseCard.classList.add('course');
