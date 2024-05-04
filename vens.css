@@ -145,6 +145,7 @@ h1 {
   z-index: 1;
   font-size: 1rem;
   transition: .2s ease;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -186,6 +187,7 @@ h1{
   text-align: center;
   font-family: "Montserrat", sans-serif;
   transition: 0.8s;
+  cursor: pointer;
 }
 h1:hover{
   color: rgb(212, 193, 85);
