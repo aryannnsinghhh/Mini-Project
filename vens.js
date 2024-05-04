@@ -34,3 +34,7 @@ function showoption(e){
     }
 
 }
+
+function direct(){
+  window.location.href = "./tracking.html";
+}
