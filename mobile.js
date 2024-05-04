@@ -8,8 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
         id: 1,
         title: 'Service checkup',
         description: 'To ensure for updates, examining operational status, identifying potential issues, and making necessary adjustments',
-        instructor: 'John Doe',
-        duration: '7 days ',
         price: 499,
         imageUrl: 'lapserv.jpeg'
       },
@@ -17,8 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
         id: 2,
         title: 'Hardware repair',
         description: 'Hardware repair involves fixing or replacing components of a device or system that have become faulty, damaged, or outdated.',
-        instructor: 'Jane Smith',
-        duration: '8 days',
         price: 999,
         imageUrl: 'hardw.jpeg'
       },
@@ -26,8 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
         id: 3,
         title: 'Software Repair',
         description: 'Software repair focuses on fixing and optimizing the software environment within a device, including OS, Apps, and data. ',
-        instructor: 'Alice Johnson',
-        duration: '12 days',
         price: 899,
         imageUrl: 'softw.jpeg'
       }
@@ -57,8 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="course-details">
           <h3>${title}</h3>
           <p><b>Description:</b> ${description}</p>
-          <p><b>Provider:</b> ${instructor}</p>
-          <p><b>Duration:</b> ${duration}</p>
           <p><b>Price:</b> Rs\n${price}</p>
           <button class="register-btn" data-id="${id}" data-title="${title}" data-price="${price}">Register</button>
         </div>
