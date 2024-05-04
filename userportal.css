@@ -122,8 +122,8 @@ footer {
   bottom: 0;
 }
 
-#total-cost-container{
+#total-cost-container h2{
   color: #ffd500;
-  display: flex;
   margin-top: 8vh;
+  display: flex;
 }

@@ -32,8 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
         imageUrl: 'softw.jpeg'
       }
     ];
-
-  
   
     let registeredCourses = [];
   
@@ -52,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
       const courseCard = document.createElement('div');
       courseCard.classList.add('course');
+      
   
       courseCard.innerHTML = `
         <img src="${imageUrl}" alt="${title}">
@@ -74,6 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
       registeredCourses.push({ id, title, price });
   
       const courseCard = createCourseCard(course);
+      const registerBtn = courseCard.querySelector('.register-btn');
+      registerBtn.remove();
       const deleteBtn = document.createElement('button');
       deleteBtn.textContent = 'Delete';
       deleteBtn.classList.add('delete-btn');
