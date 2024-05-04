@@ -109,11 +109,30 @@ body {
   transition: background 0.5s;
 }
 
-.register-btn:hover, .delete-btn:hover {
+.register-btn:hover, .delete-btn:hover{
   background: #000000;
   transform: scale(1.05);
 }
+.vend-btn{
+  background-color: #ffd500cc;
+  border-radius:1vh;
+  font-size: x-large;
+  color: black;
+  text-decoration: none;
+  width: fit-content;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 1vh 4vw;
+  margin-bottom: 2vh;
+  margin-left: 5vw;
+  font-family: 'Quantico', sans-serif;
+  transition: background 0.5s;
+  
+}
 
+.vend-btn:hover{
+  background: #fff000;
+  transform: scale(1.05);
+}
 footer {
   text-align: center;
   padding: 20px 0;
