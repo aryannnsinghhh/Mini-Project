@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <div class="contact-right">
-                    <form action="">
+                    <form id="contactForm">
                         <input type="text" name="name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
                         <textarea name="message" rows="2" placeholder="Type your message here"></textarea>
@@ -45,5 +45,28 @@
     <div class="footer">
         <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 || TechQuad</p>
     </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            var formData = new FormData(this);
+            fetch('https://sheetdb.io/api/v1/rk5sna88ks9jp', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('Form submitted successfully');
+                    document.getElementById('contactForm').reset();
+                } else {
+                    alert('Form submission failed');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred, please try again later');
+            });
+        });
+    </script>
 </body>
 </html>

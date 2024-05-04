@@ -849,9 +849,15 @@ body {
 }
 }
 a{
+text-decoration: none;
+    color: gold;
+}
+    
+h3>a{
     text-decoration: none;
     color: black;
 }
+
 a:hover{
     color: orangered;
 }

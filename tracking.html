@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Order</title>
+    <link rel="stylesheet" href="trackstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="container px-1 px-md-4 py-5 mx-auto">
+        <div class="card">
+            <div class="row d-flex justify-content-between px-3 top">
+                <div class="d-flex">
+                    <h5 id="order" style="color: gold;">ORDER <span class="text-primary font-weight-bold">#S34XDTR</span></h5>
+                </div>
+                <div class="d-flex flex-column text-sm-right">
+                    <p class="mb-0">Expected Arrival <span>24/5/24</span></p>
+                    <p>ADDR <span id="addrNumber" class="font-weight-bold">234094567242423422898</span></p>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+                <div class="col-12">
+                <ul id="progressbar" class="text-center">
+                    <li class="active step0"></li>
+                    <li class="active step0"></li>
+                    <li class="active step0"></li>
+                    <li class="step0"></li>
+                </ul>
+                </div>
+            </div>
+            <div class="row justify-content-between top">
+                <div class="row d-flex icon-content">
+                    <img class="icon" src="assets/as.png">
+                    <div class="d-flex flex-column">
+                        <p class="font-weight-bold">Request<br>Processed</p>
+                    </div>
+                </div>
+                <div class="row d-flex icon-content">
+                    <img class="icon" src="assets/as.png">
+                    <div class="d-flex flex-column">
+                        <p class="font-weight-bold">Shipped<br>to Vendor</p>
+                    </div>
+                </div>
+                <div class="row d-flex icon-content">
+                    <img class="icon" src="assets/as.png">
+                    <div class="d-flex flex-column">
+                        <p class="font-weight-bold">Repair<br>Processing</p>
+                    </div>
+                </div>
+                <div class="row d-flex icon-content">
+                    <img class="icon" src="assets/as.png">
+                    <div class="d-flex flex-column">
+                        <p class="font-weight-bold">Request<br>Completed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="input-group mb-3">
+                <input type="text" id="addrInput" class="form-control" placeholder="Enter Order Number" aria-label="Enter ADDR Number" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" id="updateAddr" style="background-color: black; color: gold; ">Update Order No.</button>
+                </div>
+            </div>
+        </div>
+        <span class="row justify-content-center mt-3">
+            <a href="gg.html" style="background-color: black; color: gold; " id="get-location" class="btn btn-primary">Get Device Location</a>
+        </span>
+    </div>
+    <script src="track.js"></script>
+</body>
+</html>
