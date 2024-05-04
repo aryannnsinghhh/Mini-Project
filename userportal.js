@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         id: 2,
         title: 'Hardware repair',
-        description: 'Hardware repair involves physically fixing or replacing components of a device or system that have become faulty, damaged, or outdated.',
+        description: 'Hardware repair involves fixing or replacing components of a device or system that have become faulty, damaged, or outdated.',
         instructor: 'Jane Smith',
         duration: '8 days',
         price: 999,
@@ -25,13 +25,15 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         id: 3,
         title: 'Software Repair',
-        description: 'Software repair focuses on fixing and optimizing the software environment within a device, which includes the operating system, applications, and data. ',
+        description: 'Software repair focuses on fixing and optimizing the software environment within a device, including OS, Apps, and data. ',
         instructor: 'Alice Johnson',
         duration: '12 days',
         price: 899,
         imageUrl: 'softw.jpeg'
       }
     ];
+
+  
   
     let registeredCourses = [];
   
