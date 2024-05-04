@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 25%, yellow 50%, #7CB9E8 25%);
+  bottom: 0;
+  left: -50%;
+  opacity: .5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, .8);
+  border-radius: .25em;
+  box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+
+.vendor-container {
+  display: flex;
+  width: fit-content;
+  border: 2px solid rgb(120, 117, 117);
+  border-radius: 15px;
+  background-color: lightslategrey;
+  color: azure;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.list-of-official,
+.list-of-thirdp {
+  padding-top: 80px;
+  padding-left: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 50px;
+}
+
+.second-vendor {
+  color: azure;
+  padding: 8px;
+  border-radius: 15px;
+}
+
+.first-vendor {
+  background-color: #000000;
+  border-radius: 15px;
+  padding: 8px;
+}
+
+.hide {
+  display: none;
+}
+
+.listelements {
+  display: flex;
+  border: 3px solid rgb(88, 84, 84);
+  margin-right: 20px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+}
+
+.listelements div {
+  padding: 0 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.listelements button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.listelements img {
+  width: 400px;
+  height: 230px;
+  border: 3px solid rgb(201, 194, 194);
+  border-radius: 15px;
+  transition: 0.6s;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.listelements img:hover {
+  width: 500px;
+  height: 287.5px;
+  border: 1px solid black;
+}
+
+.listelements p svg {
+  width: 10px;
+}
+
+.btn {
+  width: 8rem;
+  height: 3rem;
+  margin-top: 0.5rem;
+  border-radius: 5rem;
+  background: #e2e2e2;
+  color: #e2e2e2;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  font-size: 1rem;
+  transition: .2s ease;
+}
+
+.btn:hover {
+  color: #424242;
+}
+
+.btn::before {
+  content: "";
+  background: #424242;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: .7s ease;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  width: 0;
+}
+
+.btn::after {
+  content: "";
+  background: #424242;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .7s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  width: 0;
+}
